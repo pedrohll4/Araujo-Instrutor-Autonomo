@@ -237,26 +237,26 @@ export const siteConfig = {
     },
   ] as Plan[],
 
-  // Passos "Guia CNH Brasil - Digital & Prático"
+  // Passos "Guia CNH Rondônia (Detran-RO & Ciretran)"
   steps: [
     {
       number: "01",
-      title: "CADASTRO & PROCESSO GOV.BR",
+      title: "CADASTRO & PROCESSO DETRAN-RO",
       subtitle: "Abertura da 1ª Habilitação (Renach)",
       category: "digital",
-      categoryLabel: "100% DIGITAL • GOV.BR / DETRAN",
+      categoryLabel: "100% DIGITAL • DETRAN-RO / GOV.BR",
       description:
-        "O pontapé inicial oficial. Abra o seu Registro Nacional de Condutores Habilitados (Renach) pelo portal Gov.br ou site do Detran estadual. Requisitos: 18 anos completos, saber ler/escrever, RG e CPF.",
-      tip: "Tenha em mãos sua conta Gov.br (nível prata ou ouro) para preencher o formulário de abertura sem burocracia.",
+        "O pontapé inicial oficial. Abra o seu formulário de 1ª Habilitação (Renach) pelo portal do Detran-RO ou Gov.br. Requisitos: 18 anos completos, saber ler e escrever, RG e CPF.",
+      tip: "Utilize sua conta Gov.br (prata ou ouro) para abrir seu processo diretamente pelo portal do Detran Rondônia.",
       links: [
         {
-          label: "Acessar Gov.br (Obter CNH)",
-          url: "https://www.gov.br/pt-br/servicos/obter-a-carteira-nacional-de-habilitacao",
+          label: "Portal Oficial Detran-RO",
+          url: "https://www.detran.ro.gov.br/",
           variant: "primary",
         },
         {
-          label: "Portal de Serviços Senatran",
-          url: "https://portalservicos.senatran.serpro.gov.br/",
+          label: "Central de Serviços Detran-RO",
+          url: "https://centralservicos.detran.ro.gov.br/",
           variant: "outline",
         },
       ],
@@ -264,16 +264,21 @@ export const siteConfig = {
     {
       number: "02",
       title: "BIOMETRIA & EXAMES CLÍNICOS",
-      subtitle: "Médico e Psicotécnico Credenciado",
+      subtitle: "Ciretran e Clínicas Credenciadas",
       category: "presencial",
-      categoryLabel: "PRESENCIAL • CLÍNICA CREDENCIADA",
+      categoryLabel: "PRESENCIAL • CIRETRAN / CLÍNICA",
       description:
-        "Compareça ao posto do Detran ou Poupatempo para coleta biométrica (foto, digitais e assinatura). Em seguida, realize o exame de aptidão física e mental (médico) e a avaliação psicológica (psicotécnico) na clínica indicada.",
-      tip: "Pague as taxas com antecedência e durma bem na véspera do psicotécnico para manter foco e calma nos testes de atenção.",
+        "Compareça à Ciretran ou posto do Detran-RO no Vale do Jamari (Ariquemes e região) para coleta biométrica (foto, digitais e assinatura). Em seguida, faça o exame médico e avaliação psicológica (psicotécnico) na clínica credenciada.",
+      tip: "Pague as taxas do Detran-RO com antecedência e consulte os horários de atendimento da Ciretran da sua cidade.",
       links: [
         {
-          label: "Consultar Agendamentos Senatran",
-          url: "https://portalservicos.senatran.serpro.gov.br/",
+          label: "Ciretrans & Postos Detran-RO",
+          url: "https://www.detran.ro.gov.br/Paginas/postos-de-atendimento",
+          variant: "outline",
+        },
+        {
+          label: "Clínicas Credenciadas Detran-RO",
+          url: "https://www.detran.ro.gov.br/Paginas/medicos-e-psicologos-credenciados",
           variant: "outline",
         },
       ],
@@ -281,17 +286,22 @@ export const siteConfig = {
     {
       number: "03",
       title: "CURSO & PROVA TEÓRICA",
-      subtitle: "45h de Legislação e Simulado Oficial",
+      subtitle: "45h de Legislação e Prova no Detran-RO",
       category: "digital",
-      categoryLabel: "HÍBRIDO / EAD • DETRAN",
+      categoryLabel: "HÍBRIDO / EAD • DETRAN-RO",
       description:
-        "Conclua as 45 horas/aula de conteúdo teórico (Legislação de Trânsito, Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica Básica). Depois, agende e realize o exame teórico no Detran (acerto mínimo de 70% / 21 questões).",
-      tip: "Treine simulados diários nos últimos 7 dias antes da prova para se acostumar com as pegadinhas da banca examinadora.",
+        "Conclua as 45 horas/aula teóricas (presencial no CFC ou EAD credenciado). Em seguida, agende e realize o exame teórico eletrônico no Detran-RO / Ciretran (mínimo de 70% de acertos, 21 de 30 questões).",
+      tip: "Pratique simulados diários para se habituar ao formato das questões e tempo de prova da banca de Rondônia.",
       links: [
         {
           label: "Fazer Simulado Online Grátis",
           url: "https://testedetran.com.br/",
           variant: "primary",
+        },
+        {
+          label: "Consultar Agendamento Detran-RO",
+          url: "https://centralservicos.detran.ro.gov.br/",
+          variant: "outline",
         },
       ],
     },
@@ -300,14 +310,14 @@ export const siteConfig = {
       title: "EMISSÃO DA LADV",
       subtitle: "Licença de Aprendizagem de Direção",
       category: "digital",
-      categoryLabel: "DIGITAL • AUTORIZAÇÃO DETRAN",
+      categoryLabel: "DIGITAL • CIRETRAN / DETRAN-RO",
       description:
-        "Com a aprovação na prova teórica, o Detran emite no sistema a LADV (Licença de Aprendizagem de Direção Veicular). É este documento legal que permite ao candidato conduzir nas vias públicas em aulas práticas com seu instrutor.",
-      tip: "A LADV é intransferível e obrigatória durante 100% das aulas práticas. Sem ela, o treino não pode ocorrer.",
+        "Com a aprovação na prova teórica, o Detran-RO emite no sistema a LADV (Licença de Aprendizagem de Direção Veicular). Este documento autoriza você a conduzir nas vias públicas em aulas práticas com seu instrutor.",
+      tip: "A LADV é emitida eletronicamente pelo Detran-RO e deve estar ativa durante 100% das suas aulas práticas no Vale do Jamari.",
       links: [
         {
-          label: "Consultar Status do Renach",
-          url: "https://portalservicos.senatran.serpro.gov.br/",
+          label: "Consultar Status no Detran-RO",
+          url: "https://centralservicos.detran.ro.gov.br/",
           variant: "outline",
         },
       ],
@@ -315,38 +325,38 @@ export const siteConfig = {
     {
       number: "05",
       title: "AULAS PRÁTICAS COM O ARAÚJO",
-      subtitle: "Treino Personalizado Categorias A e B",
+      subtitle: "Treino no Vale do Jamari (Cat. A e B)",
       category: "pratica",
       categoryLabel: "PRÁTICA AO VOLANTE • DESTAQUE ⭐",
       highlight: true,
       description:
-        "A etapa decisiva para sua aprovação! Treinamento prático individual no seu ritmo: baliza precisa com pontos de referência descomplicados, controle absoluto de embreagem em ladeiras, percurso real da prova e superação do medo de dirigir.",
-      tip: "Treinar com metodologia paciente e focada nos critérios de avaliação do Detran evita reprovações e economiza taxas de reteste.",
+        "A fase mais importante! Treine com o Araújo nas ruas e nos percursos reais do exame da Ciretran em Ariquemes e região. Baliza precisa com pontos de referência, controle seguro de embreagem e treinamento paciente para passar de primeira.",
+      tip: "Treinar conhecendo as peculiaridades do trânsito local e os trajetos cobrados pelos examinadores da Ciretran faz toda a diferença.",
       links: [
         {
           label: "Agendar Aulas no WhatsApp",
           isWhatsApp: true,
           whatsAppMessage:
-            "Olá, Araújo! Estou na fase de aulas práticas para tirar minha CNH e quero agendar meu treinamento com você.",
+            "Olá, Araújo! Estou na fase de aulas práticas no Vale do Jamari e quero agendar meu treinamento para o Detran-RO com você.",
           variant: "primary",
         },
       ],
     },
     {
       number: "06",
-      title: "EXAME PRÁTICO DO DETRAN",
-      subtitle: "A Hora da Sua Aprovação",
+      title: "EXAME PRÁTICO DO DETRAN-RO",
+      subtitle: "A Prova Prática na Ciretran",
       category: "pratica",
-      categoryLabel: "AVALIAÇÃO OFICIAL • DETRAN",
+      categoryLabel: "AVALIAÇÃO OFICIAL • DETRAN-RO",
       description:
-        "O dia do teste final! Avaliação na pista e percurso oficial do Detran (baliza e percurso urbano para Categoria B, circuito de cones e rampa para Categoria A). Você fará a prova dominando o carro e conhecendo todos os detalhes da rota.",
-      tip: "Ajuste os retrovisores e banco com calma antes de ligar a chave. O segredo é manter o ritmo que você praticou com o instrutor.",
+        "O grande dia! Realização do exame prático na pista oficial da Ciretran (baliza e trajeto de rua para Categoria B, ou circuito de cones e rampa para Categoria A). Você fará a prova com o veículo alinhado e total confiança.",
+      tip: "Mantenha a calma, regule o banco e retrovisores sem pressa e execute exatamente o que você treinou nas aulas práticas com o Araújo.",
       links: [
         {
-          label: "Tirar Dúvidas da Prova Prática",
+          label: "Tirar Dúvidas da Prova na Ciretran",
           isWhatsApp: true,
           whatsAppMessage:
-            "Olá, Araújo! Gostaria de tirar dúvidas sobre o exame prático do Detran e percursos da prova.",
+            "Olá, Araújo! Gostaria de orientações sobre o exame prático da Ciretran / Detran-RO.",
           variant: "outline",
         },
       ],
@@ -358,8 +368,8 @@ export const siteConfig = {
       category: "digital",
       categoryLabel: "100% DIGITAL • SMARTPHONE",
       description:
-        "Aprovado! Pague a taxa de emissão da PPD (Permissão Para Dirigir, válida por 1 ano). Em poucos dias úteis, sua CNH Digital já fica disponível diretamente no aplicativo oficial Carteira Digital de Trânsito (CDT) pelo Gov.br.",
-      tip: "A CNH Digital no app CDT tem a mesma validade jurídica do documento impresso em todo o território nacional e funciona sem internet.",
+        "Parabéns, você passou! Pague a taxa de emissão da PPD do Detran-RO. Em poucos dias úteis, sua CNH Digital já fica disponível diretamente no aplicativo Carteira Digital de Trânsito (CDT) vinculada à sua conta Gov.br.",
+      tip: "A CNH Digital tem a mesma validade do documento físico em todo o Brasil e pode ser exportada em PDF oficial autenticado.",
       links: [
         {
           label: "App CDT (Google Play / Android)",
@@ -372,8 +382,8 @@ export const siteConfig = {
           variant: "outline",
         },
         {
-          label: "Portal Senatran CDT",
-          url: "https://portalservicos.senatran.serpro.gov.br/",
+          label: "Portal Oficial Detran-RO",
+          url: "https://www.detran.ro.gov.br/",
           variant: "outline",
         },
       ],

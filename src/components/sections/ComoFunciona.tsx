@@ -68,11 +68,11 @@ export const ComoFunciona: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <SectionTitle
             align="center"
-            badge="GUIA CNH BRASIL"
-            tagline="PASSO A PASSO COMPLETO • DO DIGITAL AO VOLANTE"
-            title="COMO TIRAR SUA CNH"
-            highlightText="SEM COMPLICAÇÃO"
-            description="O roteiro oficial e prático da sua 1ª Habilitação: acesse os portais digitais oficiais (Gov.br, Senatran e CDT) e prepare-se na prática com o treinamento personalizado do Instrutor Araújo."
+            badge="GUIA CNH RONDÔNIA"
+            tagline="DO DIGITAL AO VOLANTE • VALE DO JAMARI - RO"
+            title="COMO TIRAR SUA CNH NO"
+            highlightText="DETRAN-RO / CIRETRAN"
+            description="O roteiro oficial da sua 1ª Habilitação em Rondônia: acesse os portais oficiais do Detran-RO, Ciretran e Gov.br, e prepare-se na prática com o treinamento personalizado do Instrutor Araújo no Vale do Jamari."
           />
 
           {/* Filter Tabs */}
@@ -264,10 +264,10 @@ export const ComoFunciona: React.FC = () => {
                 ORIENTAÇÃO COMPLETA
               </div>
               <h4 className="text-xl sm:text-2xl font-display font-bold text-[#F5F7FA] uppercase tracking-wide mb-2">
-                Dúvidas em alguma etapa do processo?
+                Dúvidas em alguma etapa no Detran-RO ou Ciretran?
               </h4>
               <p className="text-sm text-[#9CA3AF] max-w-2xl font-sans leading-relaxed">
-                Não fique travado na burocracia. O Araújo orienta você desde a abertura do Renach até o dia da prova prática para que você conquiste sua CNH sem gastar com taxas repetidas de reprovação.
+                Não fique travado na burocracia. O Araújo orienta você desde a abertura do Renach até o dia do teste na Ciretran, para você conquistar sua CNH sem gastar com taxas repetidas de reprovação no Vale do Jamari.
               </p>
             </div>
 
@@ -276,7 +276,7 @@ export const ComoFunciona: React.FC = () => {
                 size="lg"
                 variant="primary"
                 href={siteConfig.getWhatsAppLink(
-                  'Olá, Araújo! Tenho dúvidas sobre as etapas da CNH e gostaria de receber orientações sobre as aulas práticas.'
+                  'Olá, Araújo! Tenho dúvidas sobre as etapas do Detran-RO/Ciretran e gostaria de receber orientações sobre as aulas práticas.'
                 )}
                 external
                 icon={<ArrowUpRight size={18} />}
