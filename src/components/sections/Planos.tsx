@@ -19,29 +19,29 @@ export const Planos: React.FC = () => {
             tagline="INVESTIMENTO NO SEU CONTROLE"
             title="ESCOLHA SEU"
             highlightText="PLANO DE AULAS"
-            description="Pacotes estruturados para atender desde a revisão de fundamentos até o treinamento intensivo para quem tem receio do trânsito. Todos os valores e formatos são adaptáveis à sua necessidade."
+            description="Pacotes estruturados para atender desde alinhamentos rápidos até o treinamento intensivo para quem busca total autonomia no volante. Agende direto com o instrutor e treine no seu ritmo."
           />
         </div>
 
-        {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        {/* Pricing Cards Grid (4 colunas para 2, 5, 10 ou A Combinar) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
           {siteConfig.plans.map((plan: Plan) => {
             const isHighlighted = plan.highlighted;
 
             return (
               <div
                 key={plan.id}
-                className={`relative rounded-[4px] p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 ${
+                className={`relative rounded-[4px] p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 ${
                   isHighlighted
-                    ? 'bg-[#141720] border-2 border-[#D4AF37] shadow-[0_0_30px_rgba(212,175,55,0.18)] md:-translate-y-3'
+                    ? 'bg-[#141720] border-2 border-[#D4AF37] shadow-[0_0_30px_rgba(212,175,55,0.18)] lg:-translate-y-2'
                     : 'bg-[#12151B] border border-[#282E3A] hover:border-[#B08A3C]/70 shadow-lg'
                 }`}
               >
                 {/* Highlight Ribbon / Badge */}
                 {plan.badge && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[3px] bg-[#D4AF37] text-[#0B0D10] text-[11px] font-mono font-bold uppercase tracking-widest shadow-md">
-                      <Sparkles size={12} />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-[3px] bg-[#D4AF37] text-[#0B0D10] text-[10px] font-mono font-bold uppercase tracking-widest shadow-md whitespace-nowrap">
+                      <Sparkles size={11} />
                       {plan.badge}
                     </span>
                   </div>
@@ -50,46 +50,44 @@ export const Planos: React.FC = () => {
                 {/* Top Section: Plan Name & Lessons count */}
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <h3 className="text-xl sm:text-2xl font-display font-bold text-[#F5F7FA] uppercase tracking-wide">
+                    <h3 className="text-lg sm:text-xl font-display font-bold text-[#F5F7FA] uppercase tracking-wide">
                       {plan.name}
                     </h3>
-                    <span className="text-[10px] font-mono tracking-widest text-[#B08A3C] uppercase px-2 py-0.5 rounded-[2px] bg-[#0B0D10] border border-[#282E3A]">
-                      {plan.target}
-                    </span>
                   </div>
 
-                  {/* Lessons volume */}
-                  <div className="my-4 pb-4 border-b border-[#282E3A]">
-                    <div className="text-3xl sm:text-4xl font-display font-black text-[#D4AF37] tracking-tight">
+                  <span className="text-[10px] font-mono tracking-widest text-[#B08A3C] uppercase px-2 py-0.5 rounded-[2px] bg-[#0B0D10] border border-[#282E3A] inline-block mb-2">
+                    {plan.target}
+                  </span>
+
+                  {/* Lessons volume (sem exibição de valores) */}
+                  <div className="my-3 pb-3 border-b border-[#282E3A]">
+                    <div className="text-lg sm:text-xl font-display font-black text-[#D4AF37] tracking-tight">
                       {plan.lessons}
                     </div>
-                    {/* Placeholder Price indicator */}
-                    <div className="flex items-baseline gap-2 mt-1">
-                      <span className="text-2xl sm:text-3xl font-display font-bold text-[#F5F7FA]">
-                        {plan.price}
-                      </span>
-                      <span className="text-xs font-mono text-[#6B7280]">
-                        *valor sob consulta
+                    <div className="flex items-center gap-1.5 mt-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                      <span className="text-[11px] font-mono text-[#9CA3AF] uppercase">
+                        Consulte pelo WhatsApp
                       </span>
                     </div>
                   </div>
 
                   {/* Plan description */}
-                  <p className="text-sm text-[#9CA3AF] font-sans leading-relaxed mb-6">
+                  <p className="text-xs sm:text-sm text-[#9CA3AF] font-sans leading-relaxed mb-5">
                     {plan.description}
                   </p>
 
                   {/* Features list */}
-                  <div className="space-y-3 mb-8">
-                    <span className="text-[11px] font-mono text-[#B08A3C] uppercase tracking-wider block">
+                  <div className="space-y-2.5 mb-6">
+                    <span className="text-[10px] font-mono text-[#B08A3C] uppercase tracking-wider block">
                       O que está incluso:
                     </span>
                     {plan.features.map((feat, idx) => (
-                      <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#D8D8D8]">
-                        <div className="w-4 h-4 rounded-[2px] bg-[#1A1E26] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37] shrink-0 mt-0.5">
-                          <Check size={11} />
+                      <div key={idx} className="flex items-start gap-2 text-xs text-[#D8D8D8]">
+                        <div className="w-3.5 h-3.5 rounded-[2px] bg-[#1A1E26] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37] shrink-0 mt-0.5">
+                          <Check size={10} />
                         </div>
-                        <span>{feat}</span>
+                        <span className="leading-snug">{feat}</span>
                       </div>
                     ))}
                   </div>
@@ -102,8 +100,8 @@ export const Planos: React.FC = () => {
                     variant={isHighlighted ? 'primary' : 'outline'}
                     href={siteConfig.getWhatsAppLink(plan.messageText)}
                     external
-                    icon={<MessageCircle size={16} />}
-                    className="w-full"
+                    icon={<MessageCircle size={15} />}
+                    className="w-full text-xs font-mono"
                   >
                     {plan.ctaText}
                   </Button>
