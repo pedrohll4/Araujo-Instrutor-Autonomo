@@ -57,13 +57,13 @@ export const siteConfig = {
   description:
     "Treinamento individualizado focado em quem busca segurança, superação do medo de dirigir e total domínio do veículo para aprovação e para o trânsito real.",
   
-  // NÚMERO DE WHATSAPP (Substitua pelo número com DDI e DDD sem espaços ou traços)
-  whatsappNumber: "5500000000000",
+  // NÚMERO DE WHATSAPP DO ARAÚJO (+55 69 9927-8007)
+  whatsappNumber: "556999278007",
 
-  // Região de atendimento (editável pelo instrutor)
+  // Região de atendimento (Vale do Jamari - Rondônia)
   location: {
-    city: "[Sua Cidade/Região aqui]",
-    points: "Atendimento em pontos estratégicos e percursos de exame prático",
+    city: "Vale do Jamari - RO",
+    points: "Atendimento em Ariquemes e em todo o Vale do Jamari",
   },
 
   // Horários de atendimento
@@ -74,7 +74,7 @@ export const siteConfig = {
 
   // Redes / Contatos
   contact: {
-    whatsappDisplay: "(00) 00000-0000",
+    whatsappDisplay: "+55 (69) 9927-8007",
     instagram: "@araujoinstrutor",
     email: "contato@araujoinstrutor.com.br",
   },
@@ -389,11 +389,11 @@ export const siteConfig = {
     bioParagraph1:
       "Como instrutor de condução veicular, desenvolvi uma metodologia focada na individualidade de cada aluno. Sei que cada pessoa carrega suas próprias dúvidas, inseguranças e expectativas ao entrar em um veículo.",
     bioParagraph2:
-      "Meu papel não é apenas passar macetes de prova, mas construir as bases de um condutor consciente, defensivo e seguro. Atendo tanto alunos que estão em processo de habilitação para as Categorias A e B quanto pessoas já habilitadas que desejam destravar de vez no trânsito.",
+      "Meu papel não é apenas passar macetes de prova, mas construir as bases de um condutor consciente, defensivo e seguro. Atendo em todo o Vale do Jamari, auxiliando tanto alunos que estão em processo de habilitação para as Categorias A e B quanto pessoas já habilitadas que desejam destravar de vez no trânsito.",
     credentials: [
       { label: "ESPECIALIDADE", value: "Categorias A (Moto) e B (Carro)" },
       { label: "METODOLOGIA", value: "Instrução Paciente & Direção Defensiva" },
-      { label: "FOCO", value: "Aprovação no Exame & Perda do Medo" },
+      { label: "REGIÃO", value: "Todo o Vale do Jamari - RO" },
       { label: "ATENDIMENTO", value: "Personalizado e Individual" },
     ],
   },
