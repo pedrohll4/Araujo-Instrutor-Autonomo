@@ -276,8 +276,8 @@ export const siteConfig = {
       tip: "Treine simulados diários nos últimos 7 dias antes da prova para se acostumar com as pegadinhas da banca examinadora.",
       links: [
         {
-          label: "Fazer Simulado Oficial Detran",
-          url: "https://www.detran.sp.gov.br/simulado",
+          label: "Fazer Simulado Online Grátis",
+          url: "https://testedetran.com.br/",
           variant: "primary",
         },
       ],
@@ -355,12 +355,12 @@ export const siteConfig = {
         },
         {
           label: "App CDT (App Store / iPhone)",
-          url: "https://apps.apple.com/br/app/carteira-digital-de-tr%C3%A2nsito/id1275057217",
+          url: "https://apps.apple.com/br/app/cnh-do-brasil/id1275057217",
           variant: "outline",
         },
         {
-          label: "Guia Oficial CDT Gov.br",
-          url: "https://www.gov.br/governodigital/pt-br/teste-de-usabilidade/carteira-digital-de-transito-1",
+          label: "Portal Senatran CDT",
+          url: "https://portalservicos.senatran.serpro.gov.br/",
           variant: "outline",
         },
       ],
