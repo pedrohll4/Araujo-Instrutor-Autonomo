@@ -8,7 +8,6 @@ import { Categorias } from './components/sections/Categorias';
 import { Planos } from './components/sections/Planos';
 import { ComoFunciona } from './components/sections/ComoFunciona';
 import { SobreInstrutor } from './components/sections/SobreInstrutor';
-import { Depoimentos } from './components/sections/Depoimentos';
 import { CTAFinal } from './components/sections/CTAFinal';
 import { RoadDivider } from './components/ui/RoadDivider';
 
@@ -53,13 +52,10 @@ export const App: React.FC = () => {
         {/* 6. Sobre o Instrutor */}
         <SobreInstrutor />
 
-        {/* Divider */}
-        <RoadDivider />
+        {/* Divider with Center Emblem */}
+        <RoadDivider withCenterEmblem />
 
-        {/* 7. Depoimentos */}
-        <Depoimentos />
-
-        {/* 8. CTA Final */}
+        {/* 7. CTA Final */}
         <CTAFinal />
       </main>
 

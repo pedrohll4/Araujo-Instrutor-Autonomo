@@ -12,14 +12,6 @@ export interface Plan {
   messageText: string;
 }
 
-export interface Testimonial {
-  id: string;
-  name: string;
-  category: string;
-  text: string;
-  status: string;
-}
-
 export interface StepLink {
   label: string;
   url?: string;
@@ -87,7 +79,6 @@ export const siteConfig = {
     { label: "PLANOS", href: "#planos" },
     { label: "PASSO A PASSO CNH", href: "#como-funciona" },
     { label: "SOBRE", href: "#sobre" },
-    { label: "DEPOIMENTOS", href: "#depoimentos" },
   ],
 
   // Gerador de links WhatsApp contextuais
@@ -407,29 +398,5 @@ export const siteConfig = {
       { label: "ATENDIMENTO", value: "Personalizado e Individual" },
     ],
   },
-
-  // Depoimentos (Placeholders estruturados prontos para depoimentos reais)
-  testimonials: [
-    {
-      id: "dep-1",
-      name: "[Nome do Aluno]",
-      category: "Categoria B • Aprovado",
-      text: "“Depoimento do aluno aqui. Espaço reservado para relato real sobre a didática, a paciência nas aulas e como a preparação fez toda a diferença na aprovação no exame prático.”",
-      status: "APROVADO DE PRIMEIRA",
-    },
-    {
-      id: "dep-2",
-      name: "[Nome da Aluna]",
-      category: "Habilitada • Perdeu o Medo",
-      text: "“Depoimento da aluna aqui. Espaço reservado para o relato sobre a superação do medo de dirigir no trânsito real, subidas e avenidas após anos com a CNH guardada na gaveta.”",
-      status: "DIRIGINDO SOZINHA",
-    },
-    {
-      id: "dep-3",
-      name: "[Nome do Aluno]",
-      category: "Categoria A • Moto",
-      text: "“Depoimento do aluno aqui. Espaço reservado para compartilhar a evolução na pista de moto, domínio da embreagem e o ganho de segurança nas duas rodas.”",
-      status: "HABILITADO",
-    },
-  ] as Testimonial[],
 };
+
